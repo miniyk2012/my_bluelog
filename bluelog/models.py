@@ -1,0 +1,1 @@
+from bluelog.extentions import db

@@ -2,8 +2,10 @@ import os
 
 from flask import Flask
 
-from bluelog.settings import config
 from bluelog.blueprints.blog import blog_bp
+from bluelog.blueprints.admin import admin_bp
+from bluelog.settings import config
+from bluelog.extentions import db, migrate
 
 def create_app(config_name=None):
     if config_name is None:
@@ -34,6 +36,7 @@ def register_extensions(app):
 
 def register_blueprints(app):
     app.register_blueprint(blog_bp)
+    app.register_blueprint(admin_bp, url_prefix='/admin')
 
 
 def register_errors(app):
@@ -49,7 +52,8 @@ def register_template_context(app):
 
 
 def register_request_handlers(app):
-    pass
+    db.init_app(app)
+    migrate.init_app(app, db)
 
 
 def register_commands(app):
