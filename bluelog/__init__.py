@@ -4,6 +4,7 @@ from flask import Flask
 
 from bluelog.blueprints.admin import admin_bp
 from bluelog.blueprints.blog import blog_bp
+from bluelog.commands import register_commands
 from bluelog.extensions import db, migrate, bootstrap, mail, toolbar
 from bluelog.settings import config
 
@@ -23,7 +24,7 @@ def create_app(config_name=None):
     register_shell_context(app)
     register_template_context(app)
     register_request_handlers(app)
-
+    print('create app Done.')
     return app
 
 
@@ -32,7 +33,11 @@ def register_logging(app):
 
 
 def register_extensions(app):
-    pass
+    bootstrap.init_app(app)
+    db.init_app(app)
+    mail.init_app(app)
+    migrate.init_app(app, db)
+    toolbar.init_app(app)
 
 
 def register_blueprints(app):
@@ -53,13 +58,4 @@ def register_template_context(app):
 
 
 def register_request_handlers(app):
-    bootstrap.init_app(app)
-    db.init_app(app)
-    mail.init_app(app)
-    migrate.init_app(app, db)
-    toolbar.init_app(app)
-
-
-
-def register_commands(app):
     pass

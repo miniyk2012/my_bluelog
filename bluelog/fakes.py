@@ -1,4 +1,5 @@
 import random
+
 from faker import Faker
 from sqlalchemy.exc import IntegrityError
 
@@ -87,6 +88,7 @@ def fake_comments(count=500):
 
     # replies
     for i in range(salt):
+        comment = Comment.query.get(random.randint(1, Comment.query.count()))
         comment = Comment(
             author=fake.name(),
             email=fake.email(),
@@ -94,8 +96,8 @@ def fake_comments(count=500):
             body=fake.sentence(),
             timestamp=fake.date_time_this_year(),
             reviewed=True,
-            post=Post.query.get(random.randint(1, Post.query.count())),
-            replied=Comment.query.get(random.randint(1, Comment.query.count())),
+            post=comment.post,  # 评论和回复应该在同一篇文章下面
+            replied=comment,
         )
         db.session.add(comment)
     db.session.commit()
