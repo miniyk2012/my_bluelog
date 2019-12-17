@@ -10,5 +10,9 @@ from flask_migrate import Migrate
 
 bootstrap = Bootstrap()
 db = SQLAlchemy()
+mail = Mail()
 migrate = Migrate()
+toolbar = DebugToolbarExtension()
+
+
 

@@ -2,10 +2,11 @@ import os
 
 from flask import Flask
 
-from bluelog.blueprints.blog import blog_bp
 from bluelog.blueprints.admin import admin_bp
+from bluelog.blueprints.blog import blog_bp
+from bluelog.extensions import db, migrate, bootstrap, mail, toolbar
 from bluelog.settings import config
-from bluelog.extentions import db, migrate
+
 
 def create_app(config_name=None):
     if config_name is None:
@@ -52,8 +53,12 @@ def register_template_context(app):
 
 
 def register_request_handlers(app):
+    bootstrap.init_app(app)
     db.init_app(app)
+    mail.init_app(app)
     migrate.init_app(app, db)
+    toolbar.init_app(app)
+
 
 
 def register_commands(app):
