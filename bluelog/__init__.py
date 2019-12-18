@@ -1,11 +1,12 @@
 import os
 
-from flask import Flask
+from flask import Flask, render_template
 
 from bluelog.blueprints.admin import admin_bp
 from bluelog.blueprints.blog import blog_bp
 from bluelog.commands import register_commands
 from bluelog.extensions import db, migrate, bootstrap, mail, toolbar
+from bluelog.models import Admin, Category
 from bluelog.settings import config
 
 
@@ -46,7 +47,17 @@ def register_blueprints(app):
 
 
 def register_errors(app):
-    pass
+    @app.errorhandler(400)
+    def bad_request(e):
+        return render_template('errors/400.html'), 400
+
+    @app.errorhandler(404)
+    def page_not_found(e):
+        return render_template('errors/404.html'), 404
+
+    @app.errorhandler(500)
+    def internal_server_error(e):
+        return render_template('errors/500.html'), 500
 
 
 def register_shell_context(app):
@@ -54,7 +65,11 @@ def register_shell_context(app):
 
 
 def register_template_context(app):
-    pass
+    @app.context_processor
+    def make_template_context():
+        admin = Admin.query.first()
+        categories = Category.query.order_by(Category.name).all()
+        return dict(admin=admin, categories=categories)
 
 
 def register_request_handlers(app):
