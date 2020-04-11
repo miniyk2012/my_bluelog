@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96dac237-ceca-42e0-b5d3-aa55c5f09c56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my_blueblog/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_blueblog/blueprints/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_blueblog/blueprints/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_blueblog/blueprints/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_blueblog/blueprints/blog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_blueblog/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.flaskenv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/extensions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_blueblog/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_blueblog/blueprints/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/blueprints/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_blueblog/blueprints/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/blueprints/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_blueblog/blueprints/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/blueprints/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_blueblog/blueprints/blog.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/blueprints/blog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_blueblog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +52,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.env&#10;/Users/thomas_young/Documents/projects/my_bluelog/venv/lib/python3.7/site-packages/faker/proxy.py" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/my_blueblog/blueprints" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my_bluelog" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -68,15 +71,15 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/my_blueblog/blueprints" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my_bluelog" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/my_blueblog/blueprints" />
       <recent name="$PROJECT_DIR$/my_blueblog" />
       <recent name="$PROJECT_DIR$/templates/auth" />
-      <recent name="$PROJECT_DIR$/templates/blog" />
-      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my_blueblog/blueprints" />
     </key>
   </component>
   <component name="RunManager" selected="Python.settings">
@@ -148,10 +151,10 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.settings" />
       <item itemvalue="Python tests.Unittests for test_funcs.FuncTest.test_timestamp" />
       <item itemvalue="Python tests.Unittests for test_settings.SettingsTestCase.test_basedir" />
       <item itemvalue="Python tests.Unittests in /Users/thomas_young/Documents/projects/my_bluelog/tests/test_funcs.py" />
-      <item itemvalue="Python.settings" />
     </list>
     <recent_temporary>
       <list>
@@ -191,7 +194,10 @@
       <workItem from="1586568218103" duration="159000" />
       <workItem from="1586568385182" duration="429000" />
       <workItem from="1586568851578" duration="45000" />
-      <workItem from="1586568929276" duration="891000" />
+      <workItem from="1586568929276" duration="2020000" />
+      <workItem from="1586571957327" duration="751000" />
+      <workItem from="1586573648183" duration="73000" />
+      <workItem from="1586573728795" duration="1005000" />
     </task>
     <servers />
   </component>
@@ -229,26 +235,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="507" y="211" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1586569257751" />
-    <state width="1398" height="267" key="GridCell.Tab.0.bottom" timestamp="1585788807533">
+    <state width="1398" height="267" key="GridCell.Tab.0.bottom" timestamp="1586571948507">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="267" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585788807533" />
-    <state width="1398" height="267" key="GridCell.Tab.0.center" timestamp="1585788807531">
+    <state width="1398" height="267" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586571948507" />
+    <state width="1398" height="267" key="GridCell.Tab.0.center" timestamp="1586571948506">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="267" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585788807531" />
-    <state width="1398" height="267" key="GridCell.Tab.0.left" timestamp="1585788807529">
+    <state width="1398" height="267" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586571948506" />
+    <state width="1398" height="267" key="GridCell.Tab.0.left" timestamp="1586571948505">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="267" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585788807529" />
-    <state width="1398" height="267" key="GridCell.Tab.0.right" timestamp="1585788807532">
+    <state width="1398" height="267" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586571948505" />
+    <state width="1398" height="267" key="GridCell.Tab.0.right" timestamp="1586571948507">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="267" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585788807532" />
-    <state x="221" y="89" width="1083" height="722" key="SettingsEditor" timestamp="1586569424270">
+    <state width="1398" height="267" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586571948507" />
+    <state x="221" y="89" width="1083" height="722" key="SettingsEditor" timestamp="1586571971889">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="221" y="89" width="1083" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586569424270" />
+    <state x="221" y="89" width="1083" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586571971889" />
     <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1586568851993">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

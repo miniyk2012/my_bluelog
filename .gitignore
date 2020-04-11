@@ -201,3 +201,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+
+
+# Development
+*.db
+.idea
+logs/*
+!logs/.gitkeep
