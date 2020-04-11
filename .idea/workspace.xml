@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96dac237-ceca-42e0-b5d3-aa55c5f09c56" name="Default Changelist" comment="" />
+    <list default="true" id="96dac237-ceca-42e0-b5d3-aa55c5f09c56" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/scr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -37,6 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.env&#10;/Users/thomas_young/Documents/projects/my_bluelog/venv/lib/python3.7/site-packages/faker/proxy.py" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/auth" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -64,7 +68,51 @@
       <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_settings.SettingsTestCase.test_basedir">
+  <component name="RunManager" selected="Python.scr">
+    <configuration name="scr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="my_bluelog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scr.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_12" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="my_bluelog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_12.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for test_funcs.FuncTest.test_timestamp" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="my_bluelog" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,6 +160,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.scr" />
+        <item itemvalue="Python.scratch_12" />
         <item itemvalue="Python tests.Unittests for test_settings.SettingsTestCase.test_basedir" />
         <item itemvalue="Python tests.Unittests in test_funcs.py" />
         <item itemvalue="Python tests.Unittests for test_funcs.FuncTest.test_timestamp" />
@@ -142,7 +192,11 @@
       <updated>1575850957629</updated>
       <workItem from="1577405048543" duration="1239000" />
       <workItem from="1577542664787" duration="600000" />
-      <workItem from="1585530430881" duration="1752000" />
+      <workItem from="1585530430881" duration="3639000" />
+      <workItem from="1586568074946" duration="75000" />
+      <workItem from="1586568218103" duration="159000" />
+      <workItem from="1586568385182" duration="429000" />
+      <workItem from="1586568851578" duration="45000" />
     </task>
     <servers />
   </component>
@@ -154,7 +208,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -166,10 +222,30 @@
     </state>
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1585787170906" />
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.23.1372.877@0.23.1372.877" timestamp="1585787397897" />
-    <state x="373" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1577542667126">
-      <screen x="0" y="23" width="1372" height="877" />
+    <state width="1398" height="267" key="GridCell.Tab.0.bottom" timestamp="1585788807533">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="373" y="275" key="com.intellij.ide.util.TipDialog/0.23.1372.877@0.23.1372.877" timestamp="1577542667126" />
+    <state width="1398" height="267" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585788807533" />
+    <state width="1398" height="267" key="GridCell.Tab.0.center" timestamp="1585788807531">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="267" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585788807531" />
+    <state width="1398" height="267" key="GridCell.Tab.0.left" timestamp="1585788807529">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="267" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585788807529" />
+    <state width="1398" height="267" key="GridCell.Tab.0.right" timestamp="1585788807532">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="267" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585788807532" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1586568807916">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586568807916" />
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1586568851993">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1586568851993" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/my_bluelog$Unittests_for_test_settings_SettingsTestCase_test_basedir.coverage" NAME="Unittests for test_settings.SettingsTestCase.test_basedir Coverage Results" MODIFIED="1585787240097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
