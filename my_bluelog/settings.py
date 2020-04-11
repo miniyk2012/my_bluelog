@@ -14,6 +14,7 @@ class BaseConfig(object):
     SECRET_KEY = os.getenv('SECRET_KEY', 'dev key')
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SQLALCHEMY_ECHO = True
 
     MAIL_SERVER = os.getenv('MAIL_SERVER')
     MAIL_PORT = 465

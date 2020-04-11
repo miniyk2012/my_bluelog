@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96dac237-ceca-42e0-b5d3-aa55c5f09c56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.flaskenv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_bluelog/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_bluelog/extensions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flaskenv" beforeDir="false" afterPath="$PROJECT_DIR$/.flaskenv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blueblog/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blueblog/blueprints/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/blueprints/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blueblog/blueprints/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/blueprints/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blueblog/blueprints/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/blueprints/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blueblog/blueprints/blog.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/blueprints/blog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blueblog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +41,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/.env&#10;/Users/thomas_young/Documents/projects/my_bluelog/venv/lib/python3.7/site-packages/faker/proxy.py" />
+    <property name="add_unversioned_files" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/my_bluelog" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -197,7 +188,7 @@
       <workItem from="1586568929276" duration="2020000" />
       <workItem from="1586571957327" duration="751000" />
       <workItem from="1586573648183" duration="73000" />
-      <workItem from="1586573728795" duration="1005000" />
+      <workItem from="1586573728795" duration="8492000" />
     </task>
     <servers />
   </component>
