@@ -2,11 +2,471 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96dac237-ceca-42e0-b5d3-aa55c5f09c56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my_bluelog/fakes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/CHANGES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/adapters/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/build-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/ckeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/contents.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/about/dialogs/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/clipboard/dialogs/paste.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/dialogs/codesnippet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/icons/codesnippet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/icons/hidpi/codesnippet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/codesnippet/samples/codesnippet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/dialog/dialogDefinition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filebrowser/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/dev/uploaddebugger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/filetools/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/image/dialogs/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/image/images/noimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/link/dialogs/anchor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/link/dialogs/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/link/images/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/link/images/hidpi/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/magicline/images/hidpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/magicline/images/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/magicline/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/pastefromword/filter/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/popup/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/scayt/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/scayt/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/scayt/dialogs/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/scayt/dialogs/options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/table/dialogs/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/tableselection/styles/tableselection.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/widget/images/handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/wsc/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/wsc/dialogs/wsc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/css/samples.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/img/github-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/img/header-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/img/header-separator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/img/navigation-tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/js/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/js/sf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/appendto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/assets/inlineall/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/assets/posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/assets/sample.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/assets/uilanguages/languages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/datafiltering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/dialog/assets/my_dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/dialog/dialog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/divreplace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/enterkey/enterkey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/htmlwriter/outputforflash.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/htmlwriter/outputhtml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/inlineall.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/inlinebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/inlinetextarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/jquery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/magicline/magicline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/readonly.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/replacebyclass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/replacebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/sample.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/sample_posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/tabindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/toolbar/toolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/uicolor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/uilanguages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/wysiwygarea/fullpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/old/xhtmlstyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/toolbarconfigurator/font/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/toolbarconfigurator/font/fontello.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/toolbarconfigurator/font/fontello.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/toolbarconfigurator/font/fontello.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/toolbarconfigurator/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/dialog_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/dialog_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/dialog_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/images/hidpi/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/images/hidpi/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/images/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/images/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/images/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/images/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/skins/moono-lisa/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/ckeditor/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/css/black_swan.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/css/perfect_blue.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/js/jquery-3.2.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/js/moment-with-locales.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/static/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/blog/_posts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/blog/_sidebar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/blog/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/blog/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/errors/400.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/errors/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/errors/500.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_bluelog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_bluelog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_bluelog/blueprints/blog.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/blueprints/blog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_bluelog/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_bluelog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +504,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/my_bluelog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my_bluelog/static" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,15 +523,16 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/my_blueblog/blueprints" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my_bluelog/static" />
+      <recent name="$PROJECT_DIR$/my_bluelog/static/blog" />
       <recent name="$PROJECT_DIR$/my_bluelog" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/my_blueblog/blueprints" />
-      <recent name="$PROJECT_DIR$/my_blueblog" />
-      <recent name="$PROJECT_DIR$/templates/auth" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my_bluelog/templates" />
+      <recent name="$PROJECT_DIR$/my_blueblog/blueprints" />
     </key>
   </component>
   <component name="RunManager" selected="Python.settings">
@@ -190,12 +651,18 @@
       <workItem from="1586571957327" duration="751000" />
       <workItem from="1586573648183" duration="73000" />
       <workItem from="1586573728795" duration="8492000" />
-      <workItem from="1586686737270" duration="1317000" />
+      <workItem from="1586686737270" duration="1771000" />
+      <workItem from="1586689130850" duration="4188000" />
+      <workItem from="1587599197198" duration="131000" />
+      <workItem from="1587599345638" duration="2424000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -248,10 +715,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" width="1083" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586571971889" />
-    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1586686737470">
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1587599197866">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1586686737470" />
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1587599197866" />
+    <state x="378" y="207" width="683" height="486" key="find.popup" timestamp="1587600613319">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="378" y="207" width="683" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1587600613319" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1587601132207">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1587601132207" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/my_bluelog$Unittests_for_test_settings_SettingsTestCase_test_basedir.coverage" NAME="Unittests for test_settings.SettingsTestCase.test_basedir Coverage Results" MODIFIED="1585787240097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />

@@ -7,6 +7,7 @@ from my_bluelog.blueprints.admin import admin_bp
 from my_bluelog.blueprints.auth import auth_bp
 from my_bluelog.blueprints.blog import blog_bp
 from my_bluelog.extensions import bootstrap, db, ckeditor, mail, moment
+from my_bluelog.models import Admin, Category, Link
 from my_bluelog.settings import config
 
 
@@ -21,6 +22,7 @@ def create_app(config_name=None):
     register_shell_context(app)
     register_errors(app)
     register_commands(app)
+    register_template_context(app)
     return app
 
 
@@ -56,6 +58,15 @@ def register_errors(app):
     @app.errorhandler(500)
     def internal_server_error(e):
         return render_template('errors/500.html'), 500
+
+
+def register_template_context(app):
+    @app.context_processor
+    def make_template_context():
+        admin = Admin.query.first()
+        categories = Category.query.order_by(Category.name).all()
+        links = Link.query.order_by(Link.name).all()
+        return dict(admin=admin, categories=categories, links=links)
 
 
 def register_commands(app):

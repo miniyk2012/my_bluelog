@@ -12,5 +12,3 @@ ckeditor = CKEditor()
 mail = Mail()
 moment = Moment()
 
-# 这行必须加, 否则没法新建表
-from my_bluelog.models import Admin, Post, Category, Comment, Link
