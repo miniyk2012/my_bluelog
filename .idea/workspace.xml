@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96dac237-ceca-42e0-b5d3-aa55c5f09c56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my_bluelog/emails.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flaskenv" beforeDir="false" afterPath="$PROJECT_DIR$/.flaskenv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,11 +40,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/my_bluelog/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -192,7 +195,8 @@
       <workItem from="1586686737270" duration="1771000" />
       <workItem from="1586689130850" duration="4188000" />
       <workItem from="1587599197198" duration="131000" />
-      <workItem from="1587599345638" duration="4764000" />
+      <workItem from="1587599345638" duration="5046000" />
+      <workItem from="1587689868027" duration="2238000" />
     </task>
     <servers />
   </component>
@@ -253,10 +257,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" width="1083" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586571971889" />
-    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1587599197866">
+    <state x="375" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1587689959172">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1587599197866" />
+    <state x="375" y="298" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1587689959172" />
     <state x="378" y="207" width="683" height="486" key="find.popup" timestamp="1587600613319">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -267,7 +271,7 @@
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1587601132207" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/my_bluelog$Unittests_for_test_settings_SettingsTestCase_test_basedir.coverage" NAME="Unittests for test_settings.SettingsTestCase.test_basedir Coverage Results" MODIFIED="1585787240097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/my_bluelog$settings.coverage" NAME="settings Coverage Results" MODIFIED="1586569737547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_blueblog" />
+    <SUITE FILE_PATH="coverage/my_bluelog$Unittests_for_test_settings_SettingsTestCase_test_basedir.coverage" NAME="Unittests for test_settings.SettingsTestCase.test_basedir Coverage Results" MODIFIED="1585787240097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
 </project>
