@@ -6,7 +6,7 @@ from flask import Flask, render_template
 from my_bluelog.blueprints.admin import admin_bp
 from my_bluelog.blueprints.auth import auth_bp
 from my_bluelog.blueprints.blog import blog_bp
-from my_bluelog.extensions import bootstrap, db, ckeditor, mail, moment
+from my_bluelog.extensions import bootstrap, db, ckeditor, mail, moment, migrate
 from my_bluelog.models import Admin, Category, Link
 from my_bluelog.settings import config
 
@@ -32,6 +32,7 @@ def register_extensions(app):
     ckeditor.init_app(app)
     mail.init_app(app)
     moment.init_app(app)
+    migrate.init_app(app, db)
 
 
 def register_blueprints(app):
@@ -61,6 +62,7 @@ def register_errors(app):
 
 
 def register_template_context(app):
+    """供模板全局使用的变量"""
     @app.context_processor
     def make_template_context():
         admin = Admin.query.first()
