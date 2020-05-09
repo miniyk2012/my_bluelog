@@ -35,9 +35,9 @@ def show_category(category_id):
     return render_template('blog/category.html', category=category, pagination=pagination, posts=posts)
 
 
-@blog_bp.route('/post/<int:post_id>', methods=['GET', 'POST'])
-def show_post(post_id):
-    post = Post.query.get_or_404(post_id)
+@blog_bp.route('/post/<slug>', methods=['GET', 'POST'])
+def show_post(slug):
+    post = Post.query.filter_by(slug=slug).first_or_404()
     return render_template('blog/post.html', post=post)
 
 

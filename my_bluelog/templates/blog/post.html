@@ -37,7 +37,7 @@
                         <div class="modal-body">
                             <div class="form-group">
                                 <input type="text" class="form-control"
-                                       value="{{ url_for('.show_post', post_id=post.id, _external=True) }}" readonly>
+                                       value="{{ url_for('.show_post', slug=post.slug, _external=True) }}" readonly>
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
             {% if request.args.get('reply') %}
                 <div class="alert alert-dark">
                     Reply to <strong>{{ request.args.get('author') }}</strong>:
-                    <a class="float-right" href="{{ url_for('.show_post', post_id=post.id) }}">Cancel</a>
+                    <a class="float-right" href="{{ url_for('.show_post', slug=post.slug) }}">Cancel</a>
                 </div>
             {% endif %}
         </div>

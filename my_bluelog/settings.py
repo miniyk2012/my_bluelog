@@ -28,7 +28,9 @@ class BaseConfig(object):
     BLUELOG_MANAGE_POST_PER_PAGE = 15
     BLUELOG_COMMENT_PER_PAGE = 15
 
+    # ('theme name', 'display name')
     BLUELOG_THEMES = {'perfect_blue': 'Perfect Blue', 'black_swan': 'Black Swan'}
+    BLUELOG_ALLOWED_IMAGE_EXTENSIONS = ['png', 'jpg', 'jpeg', 'gif']
 
 
 class DevelopmentConfig(BaseConfig):
