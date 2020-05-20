@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from flask import Blueprint, render_template, current_app, request
-from my_bluelog.models import Post, Category
+from my_bluelog.models import Post, Category, Comment
 
 blog_bp = Blueprint('blog', __name__)
 
@@ -38,7 +38,12 @@ def show_category(slug):
 @blog_bp.route('/post/<slug>', methods=['GET', 'POST'])
 def show_post(slug):
     post = Post.query.filter_by(slug=slug).first_or_404()
-    return render_template('blog/post.html', post=post)
+    page = request.args.get('page', 1, type=int)
+    per_page = current_app.config['BLUELOG_COMMENT_PER_PAGE']
+    pagination = Comment.query.with_parent(post).filter_by(reviewed=True).order_by(Comment.timestamp.asc()).paginate(
+        page, per_page)
+    comments = pagination.items
+    return render_template('blog/post.html', post=post, pagination=pagination, comments=comments)
 
 
 @blog_bp.route('/change-theme/<theme_name>')
