@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96dac237-ceca-42e0-b5d3-aa55c5f09c56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my_bluelog/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_bluelog/blueprints/blog.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/blueprints/blog.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_bluelog/fakes.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/fakes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_bluelog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_bluelog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_bluelog/templates/blog/_posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/templates/blog/_posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_bluelog/templates/blog/_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/templates/blog/_sidebar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_bluelog/templates/blog/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/templates/blog/post.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,12 +25,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="11" />
-    <option name="y" value="26" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
   </component>
   <component name="ProjectId" id="1VXgqcKmzc4vQMbEiczNm5MCJo2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -171,10 +164,10 @@
     </configuration>
     <list>
       <item itemvalue="Python.settings" />
+      <item itemvalue="Python.utils" />
       <item itemvalue="Python tests.Unittests for test_funcs.FuncTest.test_timestamp" />
       <item itemvalue="Python tests.Unittests for test_settings.SettingsTestCase.test_basedir" />
       <item itemvalue="Python tests.Unittests in /Users/thomas_young/Documents/projects/my_bluelog/tests/test_funcs.py" />
-      <item itemvalue="Python.utils" />
     </list>
     <recent_temporary>
       <list>
@@ -226,7 +219,9 @@
       <workItem from="1587689868027" duration="2385000" />
       <workItem from="1587730569253" duration="309000" />
       <workItem from="1588119228623" duration="3672000" />
-      <workItem from="1588985209969" duration="1692000" />
+      <workItem from="1588985209969" duration="1870000" />
+      <workItem from="1589195834537" duration="933000" />
+      <workItem from="1589935797610" duration="970000" />
     </task>
     <servers />
   </component>
@@ -267,34 +262,34 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="507" y="211" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1588119605028" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1588986428295">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1588987430648">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1588986428295" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1588986428293">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1588987430648" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1588987430647">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1588986428293" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1588986428293">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1588987430647" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1588987430645">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1588986428293" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1588986428294">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1588987430645" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1588987430648">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1588986428294" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1588987430648" />
     <state x="218" y="87" width="1083" height="722" key="SettingsEditor" timestamp="1588119613205">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="218" y="87" width="1083" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1588119613205" />
-    <state x="375" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1587689959172">
+    <state x="375" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1589935801627">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="375" y="298" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1587689959172" />
-    <state x="378" y="207" width="683" height="486" key="find.popup" timestamp="1588986934516">
+    <state x="375" y="298" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1589935801627" />
+    <state x="378" y="207" width="688" height="486" key="find.popup" timestamp="1589936690952">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="378" y="207" width="683" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1588986934516" />
+    <state x="378" y="207" width="688" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1589936690952" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1587601132207">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

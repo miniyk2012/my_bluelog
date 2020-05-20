@@ -12,7 +12,7 @@
         </h1>
         <small>
             Category: <a
-                href="{{ url_for('.show_category', category_id=post.category.id) }}">{{ post.category.name }}</a><br>
+                href="{{ url_for('.show_category', slug=post.category.slug) }}">{{ post.category.name }}</a><br>
             Date: {{ moment(post.timestamp).format('LL') }}
         </small>
     </div>

@@ -31,11 +31,13 @@ def fake_admin():
 
 
 def fake_categories(count=10):
-    category = Category(name='Default')
+    category = Category(name='Default', slug='default')
     db.session.add(category)
 
     for i in range(count):
-        category = Category(name=fake.word())
+        name = fake.word()
+        slug = slugify(name)
+        category = Category(name=name, slug=slug)
         db.session.add(category)
         try:
             db.session.commit()

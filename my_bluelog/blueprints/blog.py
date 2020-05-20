@@ -25,9 +25,9 @@ def about():
     return render_template('blog/about.html')
 
 
-@blog_bp.route('/category/<int:category_id>')
-def show_category(category_id):
-    category = Category.query.get_or_404(category_id)
+@blog_bp.route('/category/<slug>')
+def show_category(slug):
+    category = Category.query.filter_by(slug=slug).first_or_404()
     page = request.args.get('page', 1, type=int)
     per_page = current_app.config['BLUELOG_POST_PER_PAGE']
     pagination = Post.query.with_parent(category).order_by(Post.timestamp.desc()).paginate(page, per_page)
