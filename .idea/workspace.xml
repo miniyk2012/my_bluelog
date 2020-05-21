@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="96dac237-ceca-42e0-b5d3-aa55c5f09c56" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_bluelog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_bluelog/blueprints/blog.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/blueprints/blog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_bluelog/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_bluelog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_bluelog/templates/blog/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/templates/blog/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +218,8 @@
       <workItem from="1588119228623" duration="3672000" />
       <workItem from="1588985209969" duration="1870000" />
       <workItem from="1589195834537" duration="933000" />
-      <workItem from="1589935797610" duration="2397000" />
+      <workItem from="1589935797610" duration="2822000" />
+      <workItem from="1590023219376" duration="1900000" />
     </task>
     <servers />
   </component>
@@ -286,10 +284,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="375" y="298" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1589935801627" />
-    <state x="378" y="207" width="688" height="486" key="find.popup" timestamp="1589936690952">
+    <state x="378" y="207" width="688" height="486" key="find.popup" timestamp="1590024860439">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="378" y="207" width="688" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1589936690952" />
+    <state x="378" y="207" width="688" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1590024860439" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1587601132207">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

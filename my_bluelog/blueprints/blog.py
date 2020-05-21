@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from flask import Blueprint, render_template, current_app, request
+from flask import Blueprint, render_template, current_app, request, redirect, url_for, flash
 from my_bluelog.models import Post, Category, Comment
 
 blog_bp = Blueprint('blog', __name__)
@@ -49,3 +49,13 @@ def show_post(slug):
 @blog_bp.route('/change-theme/<theme_name>')
 def change_theme(theme_name):
     return 'The change theme page'
+
+
+@blog_bp.route('/reply/comment/<int:comment_id>')
+def reply_comment(comment_id):
+    comment = Comment.query.get_or_404(comment_id)
+    if not comment.post.can_comment:
+        flash('Comment is disabled.', 'warning')
+        return redirect(url_for('.show_post', slug=comment.post.slug))
+    return redirect(
+        url_for('.show_post', slug=comment.post.slug, reply=comment_id, author=comment.author) + '#comment-form')
