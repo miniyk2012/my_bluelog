@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from flask import Blueprint, render_template, current_app, request, redirect, url_for, flash
+from flask import Blueprint, render_template, current_app, request, redirect, url_for, flash, abort, make_response
 
 from my_bluelog.extensions import db
 from my_bluelog.emails import send_new_reply_email, send_new_comment_email
 from my_bluelog.forms import AdminCommentForm, CommentForm
 from my_bluelog.models import Post, Category, Comment
+from my_bluelog.utils import redirect_back
 
 blog_bp = Blueprint('blog', __name__)
 
@@ -59,7 +60,7 @@ def show_post(slug):
         form = CommentForm()
         from_admin = False
         reviewed = False
-
+    # form是评论或者回复
     if form.validate_on_submit():
         author = form.author.data
         email = form.email.data
@@ -87,7 +88,11 @@ def show_post(slug):
 
 @blog_bp.route('/change-theme/<theme_name>')
 def change_theme(theme_name):
-    return 'The change theme page'
+    if theme_name not in current_app.config['BLUELOG_THEMES'].keys():
+        abort(404)
+    response = make_response(redirect_back())  # 跳转到next=url所在的页面
+    response.set_cookie('theme', theme_name, max_age=30 * 24 * 60 * 60)
+    return response
 
 
 @blog_bp.route('/reply/comment/<int:comment_id>')
