@@ -7,13 +7,9 @@ from my_bluelog.emails import send_new_reply_email, send_new_comment_email
 from my_bluelog.forms import AdminCommentForm, CommentForm
 from my_bluelog.models import Post, Category, Comment
 from my_bluelog.utils import redirect_back
+from flask_login import current_user
 
 blog_bp = Blueprint('blog', __name__)
-
-
-# skip it
-class current_user:
-    is_authenticated = False
 
 
 @blog_bp.route('/')
@@ -49,7 +45,7 @@ def show_post(slug):
         page, per_page)
     comments = pagination.items
 
-    if current_user.is_authenticated:
+    if current_user.is_authenticated:  # 只有管理员才能登陆
         form = AdminCommentForm()
         form.author.data = current_user.name
         form.email.data = current_app.config['BLUELOG_EMAIL']
