@@ -18,6 +18,11 @@ migrate = Migrate()
 toolbar = DebugToolbarExtension()
 login_manager = LoginManager()
 
+# 使用login_required装饰器的视图, 若未登陆, 会自动重定向到指定页面, 并闪现消息提示, 配置如下:
+login_manager.login_view = 'auth.login'
+login_manager.login_message = '请先登陆!'
+login_manager.login_message_category = 'warning'
+
 
 @login_manager.user_loader
 def load_user(user_id):
