@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96dac237-ceca-42e0-b5d3-aa55c5f09c56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/admin/settings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_bluelog/blueprints/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/blueprints/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_bluelog/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/extensions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_bluelog/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/templates/auth/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_bluelog/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_bluelog/templates/errors/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/templates/errors/500.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +235,7 @@
       <workItem from="1591325434394" duration="4532000" />
       <workItem from="1591576885687" duration="155000" />
       <workItem from="1591577048308" duration="2510000" />
-      <workItem from="1591663510685" duration="2232000" />
+      <workItem from="1591663510685" duration="2298000" />
     </task>
     <servers />
   </component>

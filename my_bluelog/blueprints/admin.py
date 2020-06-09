@@ -25,6 +25,7 @@ def settings():
         current_user.blog_title = form.blog_title.data
         current_user.blog_sub_title = form.blog_sub_title.data
         current_user.about = form.about.data
+        # current_user这里就是admin, 因此实际也就是对admin做了更新
         db.session.commit()
         flash('Setting updated.', 'success')
         return redirect(url_for('blog.index'))
