@@ -3,12 +3,13 @@ import os
 import click
 from flask import Flask, render_template
 from flask_wtf.csrf import CSRFError
+from flask_login import current_user
 
 from my_bluelog.blueprints.admin import admin_bp
 from my_bluelog.blueprints.auth import auth_bp
 from my_bluelog.blueprints.blog import blog_bp
 from my_bluelog.extensions import bootstrap, db, ckeditor, mail, moment, migrate, toolbar, login_manager, csrf
-from my_bluelog.models import Admin, Category, Link
+from my_bluelog.models import Admin, Category, Link, Comment, Post
 from my_bluelog.settings import config
 
 
@@ -48,7 +49,7 @@ def register_blueprints(app):
 def register_shell_context(app):
     @app.shell_context_processor
     def make_shell_context():
-        return dict(db=db)
+        return dict(db=db, Admin=Admin, Post=Post, Category=Category, Comment=Comment)
 
 
 def register_errors(app):
@@ -71,12 +72,17 @@ def register_errors(app):
 
 def register_template_context(app):
     """供模板全局使用的变量"""
+
     @app.context_processor
     def make_template_context():
         admin = Admin.query.first()
         categories = Category.query.order_by(Category.name).all()
         links = Link.query.order_by(Link.name).all()
-        return dict(admin=admin, categories=categories, links=links)
+        if current_user.is_authenticated:
+            unread_comments = Comment.query.filter_by(reviewed=False).count()
+        else:
+            unread_comments = None
+        return dict(admin=admin, categories=categories, links=links, unread_comments=unread_comments)
 
 
 def register_commands(app):
