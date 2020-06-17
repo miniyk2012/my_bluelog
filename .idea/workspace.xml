@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96dac237-ceca-42e0-b5d3-aa55c5f09c56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/admin/manage_category.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/admin/manage_comment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/admin/manage_link.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/admin/manage_post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/admin/new_category.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/admin/new_link.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/admin/new_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_bluelog/templates/admin/edit_link.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_bluelog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_bluelog/blueprints/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/blueprints/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_bluelog/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_bluelog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_bluelog/templates/admin/manage_category.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/templates/admin/manage_category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_bluelog/templates/admin/manage_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/templates/admin/manage_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_bluelog/templates/blog/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_bluelog/templates/blog/post.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +43,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/my_bluelog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my_bluelog/templates/admin" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -64,16 +62,16 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my_bluelog/templates" />
+      <recent name="$PROJECT_DIR$/my_blueblog/blueprints" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my_bluelog/templates/admin" />
       <recent name="$PROJECT_DIR$/my_bluelog" />
       <recent name="$PROJECT_DIR$/my_bluelog/templates/blog" />
       <recent name="$PROJECT_DIR$/my_bluelog/static" />
       <recent name="$PROJECT_DIR$/my_bluelog/static/blog" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/my_bluelog/templates" />
-      <recent name="$PROJECT_DIR$/my_blueblog/blueprints" />
     </key>
   </component>
   <component name="RunManager" selected="Flask server.Flask">
@@ -247,7 +245,9 @@
       <workItem from="1591577048308" duration="2510000" />
       <workItem from="1591663510685" duration="2520000" />
       <workItem from="1591924278277" duration="2665000" />
-      <workItem from="1592269245135" duration="2491000" />
+      <workItem from="1592269245135" duration="2741000" />
+      <workItem from="1592285235858" duration="9000" />
+      <workItem from="1592355327937" duration="2114000" />
     </task>
     <servers />
   </component>
@@ -373,14 +373,15 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1591328057197" />
-    <state x="375" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1589935801627">
+    <state x="375" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1592355338697">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="375" y="298" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1589935801627" />
-    <state x="378" y="207" width="688" height="486" key="find.popup" timestamp="1592270498299">
+    <state x="375" y="298" key="com.intellij.ide.util.TipDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1592285243489" />
+    <state x="375" y="298" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1592355338697" />
+    <state x="378" y="207" width="688" height="486" key="find.popup" timestamp="1592356474429">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="378" y="207" width="688" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1592270498299" />
+    <state x="378" y="207" width="688" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1592356474429" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1591664118061">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

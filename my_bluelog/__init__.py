@@ -2,6 +2,7 @@ import os
 
 import click
 from flask import Flask, render_template
+from flask_sqlalchemy import get_debug_queries
 from flask_wtf.csrf import CSRFError
 from flask_login import current_user
 
@@ -158,3 +159,15 @@ def register_commands(app):
 
         db.session.commit()
         click.echo('Done.')
+
+
+def register_request_handlers(app):
+    @app.after_request
+    def query_profiler(response):
+        for q in get_debug_queries():
+            if q.duration >= app.config['BLUELOG_SLOW_QUERY_THRESHOLD']:
+                app.logger.warning(
+                    'Slow query: Duration: %fs\n Context: %s\nQuery: %s\n '
+                    % (q.duration, q.context, q.statement)
+                )
+        return response

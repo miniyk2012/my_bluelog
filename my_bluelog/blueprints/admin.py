@@ -145,3 +145,86 @@ def manage_comment():
 @admin_bp.route('/link/manage')
 def manage_link():
     return render_template('admin/manage_link.html')
+
+
+@admin_bp.route('/post/<slug>/set-comment', methods=['POST'])
+def set_comment(slug):
+    post = Post.query.filter_by(slug=slug).first_or_404()
+    if post.can_comment:
+        post.can_comment = False
+        flash('Comment disabled.', 'success')
+    else:
+        post.can_comment = True
+        flash('Comment enabled.', 'success')
+    db.session.commit()
+    return redirect_back()
+
+
+@admin_bp.route('/comment/<int:comment_id>/approve', methods=['POST'])
+def approve_comment(comment_id):
+    comment = Comment.query.get_or_404(comment_id)
+    comment.reviewed = True
+    db.session.commit()
+    flash('Comment published.', 'success')
+    return redirect_back()
+
+
+@admin_bp.route('/comment/<int:comment_id>/delete', methods=['POST'])
+def delete_comment(comment_id):
+    comment = Comment.query.get_or_404(comment_id)
+    db.session.delete(comment)
+    db.session.commit()
+    flash('Comment deleted.', 'success')
+    return redirect_back()
+
+
+@admin_bp.route('/category/<int:category_id>/delete', methods=['POST'])
+def delete_category(category_id):
+    category = Category.query.get_or_404(category_id)
+    if category.id == 1:
+        flash('You can not delete the default category.', 'warning')
+        return redirect(url_for('blog.index'))
+    category.delete()
+    flash('Category deleted.', 'success')
+    return redirect(url_for('.manage_category'))
+
+
+@admin_bp.route('/category/<slug>/edit', methods=['GET', 'POST'])
+def edit_category(slug):
+    form = CategoryForm()
+    category = Category.query.filter_by(slug=slug).first_or_404()
+    if category.id == 1:
+        flash('You can not edit the default category.', 'warning')
+        return redirect(url_for('blog.index'))
+    if form.validate_on_submit():
+        category.name = form.name.data
+        db.session.commit()
+        flash('Category updated.', 'success')
+        return redirect(url_for('.manage_category'))
+
+    form.name.data = category.name
+    return render_template('admin/edit_category.html', form=form)
+
+
+@admin_bp.route('/link/<int:link_id>/edit', methods=['GET', 'POST'])
+def edit_link(link_id):
+    form = LinkForm()
+    link = Link.query.get_or_404(link_id)
+    if form.validate_on_submit():
+        link.name = form.name.data
+        link.url = form.url.data
+        db.session.commit()
+        flash('Link updated.', 'success')
+        return redirect(url_for('.manage_link'))
+    form.name.data = link.name
+    form.url.data = link.url
+    return render_template('admin/edit_link.html', form=form)
+
+
+@admin_bp.route('/link/<int:link_id>/delete', methods=['POST'])
+def delete_link(link_id):
+    link = Link.query.get_or_404(link_id)
+    db.session.delete(link)
+    db.session.commit()
+    flash('Link deleted.', 'success')
+    return redirect(url_for('.manage_link'))
