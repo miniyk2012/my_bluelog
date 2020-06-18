@@ -13,8 +13,13 @@ else:
 class BaseConfig(object):
     SECRET_KEY = os.getenv('SECRET_KEY', 'dev key')
 
+    DEBUG_TB_INTERCEPT_REDIRECTS = False
+
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_ECHO = False
+
+    CKEDITOR_ENABLE_CSRF = True
+    CKEDITOR_FILE_UPLOADER = 'admin.upload_image'
 
     MAIL_SERVER = os.getenv('MAIL_SERVER')
     MAIL_PORT = 465

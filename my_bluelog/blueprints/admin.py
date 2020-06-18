@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
+import os
 
-from flask import Blueprint, redirect, flash, url_for, render_template, request, current_app
+from flask import Blueprint, redirect, flash, url_for, render_template, request, current_app, send_from_directory
+from flask_ckeditor import upload_fail, upload_success
 from flask_login import login_required, current_user
 
 from my_bluelog.forms import SettingForm, PostForm, CategoryForm, LinkForm
 from my_bluelog.extensions import db
 from my_bluelog.models import Post, Category, Link, Comment
-from my_bluelog.utils import redirect_back, slugify
+from my_bluelog.utils import redirect_back, slugify, allowed_file
 
 admin_bp = Blueprint('admin', __name__)
 
@@ -180,11 +182,11 @@ def delete_comment(comment_id):
 
 @admin_bp.route('/category/<int:category_id>/delete', methods=['POST'])
 def delete_category(category_id):
-    category = Category.query.get_or_404(category_id)
+    category: Category = Category.query.get_or_404(category_id)
     if category.id == 1:
         flash('You can not delete the default category.', 'warning')
         return redirect(url_for('blog.index'))
-    category.delete()
+    category.delete()  # 删除某一分类时, 将该分类下所有文字移动到默认分类中
     flash('Category deleted.', 'success')
     return redirect(url_for('.manage_category'))
 
@@ -228,3 +230,18 @@ def delete_link(link_id):
     db.session.commit()
     flash('Link deleted.', 'success')
     return redirect(url_for('.manage_link'))
+
+
+@admin_bp.route('/uploads/<path:filename>')
+def get_image(filename):
+    return send_from_directory(current_app.config['BLUELOG_UPLOAD_PATH'], filename)
+
+
+@admin_bp.route('/upload', methods=['POST'])
+def upload_image():
+    f = request.files.get('upload')
+    if not allowed_file(f.filename):
+        return upload_fail('Image only!')
+    f.save(os.path.join(current_app.config['BLUELOG_UPLOAD_PATH'], f.filename))
+    url = url_for('.get_image', filename=f.filename)
+    return upload_success(url, f.filename)
