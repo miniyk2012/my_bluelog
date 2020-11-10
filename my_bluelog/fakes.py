@@ -12,6 +12,7 @@ from sqlalchemy.exc import IntegrityError
 
 from my_bluelog import db
 from my_bluelog.models import Admin, Category, Post, Comment, Link
+from my_bluelog.utils import slugify
 
 fake = Faker()
 
@@ -30,11 +31,13 @@ def fake_admin():
 
 
 def fake_categories(count=10):
-    category = Category(name='Default')
+    category = Category(name='Default', slug='default')
     db.session.add(category)
 
     for i in range(count):
-        category = Category(name=fake.word())
+        name = fake.word()
+        slug = slugify(name)
+        category = Category(name=name, slug=slug)
         db.session.add(category)
         try:
             db.session.commit()
@@ -44,8 +47,11 @@ def fake_categories(count=10):
 
 def fake_posts(count=50):
     for i in range(count):
+        title = fake.sentence()
+        slug = slugify(title)
         post = Post(
-            title=fake.sentence(),
+            title=title,
+            slug=slug,
             body=fake.text(2000),
             category=Category.query.get(random.randint(1, Category.query.count())),
             timestamp=fake.date_time_this_year()

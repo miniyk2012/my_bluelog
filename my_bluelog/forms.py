@@ -54,7 +54,7 @@ class CommentForm(FlaskForm):
 
 
 class AdminCommentForm(CommentForm):
-    author = HiddenField()
+    author = HiddenField()  # 隐藏不显示
     email = HiddenField()
     site = HiddenField()
 

@@ -2,12 +2,15 @@ import os
 
 import click
 from flask import Flask, render_template
+from flask_sqlalchemy import get_debug_queries
+from flask_wtf.csrf import CSRFError
+from flask_login import current_user
 
 from my_bluelog.blueprints.admin import admin_bp
 from my_bluelog.blueprints.auth import auth_bp
 from my_bluelog.blueprints.blog import blog_bp
-from my_bluelog.extensions import bootstrap, db, ckeditor, mail, moment
-from my_bluelog.models import Admin, Category, Link
+from my_bluelog.extensions import bootstrap, db, ckeditor, mail, moment, migrate, toolbar, login_manager, csrf
+from my_bluelog.models import Admin, Category, Link, Comment, Post
 from my_bluelog.settings import config
 
 
@@ -29,9 +32,13 @@ def create_app(config_name=None):
 def register_extensions(app):
     bootstrap.init_app(app)
     db.init_app(app)
+    login_manager.init_app(app)
     ckeditor.init_app(app)
     mail.init_app(app)
+    csrf.init_app(app)
     moment.init_app(app)
+    migrate.init_app(app, db)
+    toolbar.init_app(app)
 
 
 def register_blueprints(app):
@@ -43,7 +50,7 @@ def register_blueprints(app):
 def register_shell_context(app):
     @app.shell_context_processor
     def make_shell_context():
-        return dict(db=db)
+        return dict(db=db, Admin=Admin, Post=Post, Category=Category, Comment=Comment)
 
 
 def register_errors(app):
@@ -59,14 +66,24 @@ def register_errors(app):
     def internal_server_error(e):
         return render_template('errors/500.html'), 500
 
+    @app.errorhandler(CSRFError)
+    def handle_csrf_error(e):
+        return render_template('errors/400.html', description=e.description), 400
+
 
 def register_template_context(app):
+    """供模板全局使用的变量"""
+
     @app.context_processor
     def make_template_context():
         admin = Admin.query.first()
         categories = Category.query.order_by(Category.name).all()
         links = Link.query.order_by(Link.name).all()
-        return dict(admin=admin, categories=categories, links=links)
+        if current_user.is_authenticated:
+            unread_comments = Comment.query.filter_by(reviewed=False).count()
+        else:
+            unread_comments = None
+        return dict(admin=admin, categories=categories, links=links, unread_comments=unread_comments)
 
 
 def register_commands(app):
@@ -108,3 +125,49 @@ def register_commands(app):
         fake_links()
 
         click.echo('Done.')
+
+    @app.cli.command()
+    @click.option('--username', prompt=True, help='The username used to login.')
+    @click.option('--password', prompt=True, hide_input=True,
+                  confirmation_prompt=True, help='The password used to login.')
+    def init(username, password):
+        """Building Bluelog, just for you."""
+        click.echo('Initializing the database...')
+        db.create_all()
+        admin = Admin.query.first()
+        if admin is not None:
+            click.echo('The administrator already exists, updating...')
+            admin.username = username
+            admin.set_password(password)
+        else:
+            click.echo('Creating the temporary administrator account...')
+            admin = Admin(
+                username=username,
+                blog_title='Bluelog',
+                blog_sub_title="No, I'm the real thing.",
+                name='Admin',
+                about='Anything about you.'
+            )
+            admin.set_password(password)
+            db.session.add(admin)
+
+        category = Category.query.first()
+        if category is None:
+            click.echo('Creating the default category...')
+            category = Category(name='Default')
+            db.session.add(category)
+
+        db.session.commit()
+        click.echo('Done.')
+
+
+def register_request_handlers(app):
+    @app.after_request
+    def query_profiler(response):
+        for q in get_debug_queries():
+            if q.duration >= app.config['BLUELOG_SLOW_QUERY_THRESHOLD']:
+                app.logger.warning(
+                    'Slow query: Duration: %fs\n Context: %s\nQuery: %s\n '
+                    % (q.duration, q.context, q.statement)
+                )
+        return response
